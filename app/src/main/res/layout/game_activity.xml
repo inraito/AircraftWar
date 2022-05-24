@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <edu.hitsz.aircraftwar.game.view.BackgroundView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:background_image="@drawable/background_2" />
+    <edu.hitsz.aircraftwar.game.view.FlyingObjectView
+        android:id="@+id/flyingObjectView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:hero_image="@drawable/hero"
+        app:mob_image="@drawable/mob"
+        app:elite_image="@drawable/elite"
+        app:boss_image="@drawable/boss"
+        app:blood_prop_image="@drawable/prop_blood"
+        app:bomb_prop_image="@drawable/prop_bomb"
+        app:bullet_prop_image="@drawable/prop_bullet"
+        app:enemy_bullet_image="@drawable/bullet_enemy"
+        app:hero_bullet_image="@drawable/bullet_hero"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP:test"
+            android:textColor="#FF0000"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score:test"
+            android:textColor="#FFE500"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

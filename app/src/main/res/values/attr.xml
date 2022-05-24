@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BackgroundView">
+        <attr name="background_image" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FlyingObjectView">
+        <attr name="hero_image" format="reference" />
+        <attr name="mob_image" format="reference" />
+        <attr name="elite_image" format="reference" />
+        <attr name="boss_image" format="reference" />
+        <attr name="blood_prop_image" format="reference" />
+        <attr name="bomb_prop_image" format="reference" />
+        <attr name="bullet_prop_image" format="reference" />
+        <attr name="enemy_bullet_image" format="reference" />
+        <attr name="hero_bullet_image" format="reference" />
+    </declare-styleable>
+</resources>

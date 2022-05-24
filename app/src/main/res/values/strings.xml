@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AircraftWar</string>
+    <string name="easy_button">简单</string>
+    <string name="normal_button">普通</string>
+    <string name="hard_button">困难</string>
+    <string name="music_check_box">开启音乐</string>
+    <string name="delete_record_button">删除记录</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="gameover_message">游戏结束，请输入玩家名</string>
+
+
+</resources>
