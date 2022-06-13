@@ -91,9 +91,15 @@ public class GameRepository {
                 templateManager.getNormalTemplate().init(musicOn);
                 break;
             }
+            case MULT:{
+                templateManager.getMultTemplate().init(musicOn);
+                break;
+            }
         }
         manager.getHeroAircraft();
+    }
 
+    public void startGame(){
         executorService.scheduleWithFixedDelay(this::tick,
                 StaticField.timeInterval,
                 StaticField.timeInterval,

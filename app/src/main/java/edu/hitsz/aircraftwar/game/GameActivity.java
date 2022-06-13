@@ -3,6 +3,7 @@ package edu.hitsz.aircraftwar.game;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
@@ -46,9 +47,15 @@ public class GameActivity extends AppCompatActivity {
             viewModel.registerFlyingObjectView(binding.flyingObjectView);
             viewModel.registerHpText(binding.hpText);
             viewModel.registerScoreText(binding.scoreText);
-            viewModel.registerGameOver(binding.getRoot());
+            if(difficulty== MainMenuActivity.Difficulty.MULT){
+                viewModel.registerMultGameOver(binding.getRoot());
+                viewModel.registerRivalScore(binding.rivalScore);
+                binding.rivalScore.setVisibility(View.VISIBLE);
+            }else {
+                viewModel.registerGameOver(binding.getRoot());
+            }
             viewModel.bindFlyingObjectManager(binding.flyingObjectView);
-
+            viewModel.startGame();
         });
     }
 

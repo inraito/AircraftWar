@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">AircraftWar</string>
+    <string name="login_button">登录</string>
+    <string name="login_title">登录</string>
+    <string name="register_button">注册</string>
+    <string name="login_text">未登录</string>
+    <string name="account">用户名</string>
+    <string name="mult_button">联机</string>
     <string name="easy_button">简单</string>
     <string name="normal_button">普通</string>
     <string name="hard_button">困难</string>
@@ -8,6 +14,7 @@
     <string name="confirm">确认</string>
     <string name="cancel">取消</string>
     <string name="gameover_message">游戏结束，请输入玩家名</string>
+
 
 
 </resources>

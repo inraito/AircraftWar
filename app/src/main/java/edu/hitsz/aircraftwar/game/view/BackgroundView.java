@@ -28,7 +28,6 @@ public class BackgroundView extends View {
                 0, 0);
         try {
             mImage = a.getDrawable(R.styleable.BackgroundView_background_image);
-            Log.d("BackgroundView", mImage.toString());
         } finally {
             a.recycle();
         }
@@ -57,9 +56,6 @@ public class BackgroundView extends View {
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
         this.onSizeChanged();
-        Log.d("BackgroundView", "onDraw() is called");
-        Log.d("BackgroundView", upperRect.toString());
-        Log.d("BackgroundView", lowerRect.toString());
         mImage.setBounds(upperRect);
         mImage.draw(canvas);
         mImage.setBounds(lowerRect);

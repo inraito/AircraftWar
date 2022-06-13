@@ -20,6 +20,7 @@ import edu.hitsz.aircraftwar.game.repository.object.prop.AbstractProp;
 @Singleton
 public class GameAssetsManager {
     private volatile int score = 0;
+    private volatile int rivalScore = 0;
     private volatile HeroAircraft heroAircraft;
     //any changes on this list should be wrapped in a synchronized block
     private final List<AbstractAircraft> enemyAircraft = Collections.synchronizedList(new ArrayList<>());
@@ -82,5 +83,13 @@ public class GameAssetsManager {
             }
         }
         return heroAircraft;
+    }
+
+    public int getRivalScore() {
+        return rivalScore;
+    }
+
+    public void setRivalScore(int rivalScore) {
+        this.rivalScore = rivalScore;
     }
 }
